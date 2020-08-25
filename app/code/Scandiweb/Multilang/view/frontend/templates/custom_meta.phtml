@@ -1,0 +1,17 @@
+<?php
+
+/** @var Scandiweb\Multilang\ViewModel\MetaLangs $viewModel*/
+
+$viewModel = $block->getData('view_model');
+
+$metaLangs = $viewModel->getMetas();
+
+foreach($metaLangs as $metaLang) {
+	$locale = $metaLang['locale'];
+	$alternateUrl = $metaLang['alternateurl'];
+	echo "<link rel='alternate' hreflang='$locale' href='$alternateUrl' />"."\n";
+}
+
+?>
+
+

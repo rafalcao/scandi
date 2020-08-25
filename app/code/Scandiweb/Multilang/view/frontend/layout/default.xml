@@ -1,0 +1,13 @@
+ <page xmlns:xsi="w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"> 
+	<body>
+		<referenceBlock name="head.additional"> 
+			<block name="customhead.viewmodel" template="Scandiweb_Multilang::custom_meta.phtml">
+			    <arguments>
+				  <argument name="view_model"
+						xsi:type="object">Scandiweb\Multilang\ViewModel\MetaLangs</argument>
+			    </arguments>
+			</block>
+		</referenceBlock>
+	</body>
+</page>
+
