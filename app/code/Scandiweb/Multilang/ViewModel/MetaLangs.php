@@ -31,7 +31,6 @@ class MetaLangs implements \Magento\Framework\View\Element\Block\ArgumentInterfa
 	public function getMetas() {
 		$storeIdsFromPage = $this->_page->getStoreId(); //stores ids that current page belong
 		$storesMetas = array();
-		$stores = $this->_storeManager->getStores(); //all stores
 		$pageIdentifier = $this->_page->getIdentifier(); //current cms url key
 
 		if($storeIdsFromPage[0]=="0") { //check if option all store views is checked under page content tab
