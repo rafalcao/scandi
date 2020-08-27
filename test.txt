@@ -1,0 +1,12 @@
+& when (@media-common = true) {
+
+@scandiColor:#fff
+body .action.primary {
+
+	background-color: @scandiColor;
+
+	border: 1px solid @scandiColor;
+
+}
+
+}
